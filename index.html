@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Registration Form</title>
+  </head>
+  <body>
+    <h2>Online Registration</h2>
+    <ol>
+      <li><a href="#">Home</a></li>
+      <li>Online Registration</li>
+    </ol>
+    <form>
+      <label for="sname">Student Name</label>
+      <input
+        type="text"
+        name="StudentName"
+        id="StudentName"
+        placeholder="Student Name"
+      />
+      <br />
+      <label for="fname">Father Name</label>
+      <input
+        type="text"
+        name="FatherName"
+        id="FatherName"
+        placeholder="Father Name"
+      />
+      <br />
+      <label for="mnumber">Mobile No.</label>
+      <input
+        type="number"
+        name="MobileNumber"
+        id="MobileNumber"
+        placeholder="Mobile No. without Zero"
+      />
+      <br />
+      <label for="email">Email</label>
+      <input type="email" name="Email" id="Email" placeholder="Email" />
+      <br />
+      <img src="image/profile.png" alt="Profile Pic" height="100" width="100" />
+      <br />
+      <div>
+        <input
+          type="file"
+          accept=".jpg,.jpeg,.png"
+          onchange="showimagepreview(this)"
+          id="imagefile"
+        />
+        <label for="ThumbnailFile">Choose file</label>
+      </div>
+      <div>
+        <label for="session">Session</label>
+        <select name="Session">
+            <option value="4">2022-2023</option>
+            <option value="4">2023-2024</option>
+            <option value="4">2024-2025</option>
+            <option value="4">2025-2026</option>
+        </select>
+      </div>
+      <div>
+        <label for="medium">Medium</label>
+        <select name="medium">
+            <option value="4">English</option>
+            <option value="4">Hindi</option>
+            <option value="4">Hinglish</option>
+            <option value="4">Others</option>
+        </select>
+      </div>
+      <div>
+        <label for="batch">All Batch</label>
+        <select name="Batch">
+            <option value="4">B.Tech</option>
+            <option value="4">B.Sc</option>
+            <option value="4">B.Com</option>
+            <option value="4">B.Pharma</option>
+            <option value="4">Others</option>
+        </select>
+      </div>
+      <div>
+        <label for="dateofbirth">Date Of Birth</label>
+      <input type="date" name="dateofbirth" id="DateOfBirth"/>
+      </div>
+      <div>
+        <label for="permanentaddress">Permanent Address</label>
+        <textarea name="permanentaddress" rows="2" cols="22" placeholder="Address"></textarea>
+      </div>
+      <div>
+        <label for="mailingaddress">Mailing Address</label>
+        <textarea name="mailingaddress" rows="2" cols="22" placeholder="Address"></textarea>
+      </div>
+      <div>
+      <input type="checkbox" id="TandC"/>
+      <label>I accept the Terms and Conditions</label>
+      </div>
+      <div>
+        <input type="submit" value="Submit">
+        <input type="submit" value="Cancel">
+      </div>
+    </form>
+  </body>
+</html>
